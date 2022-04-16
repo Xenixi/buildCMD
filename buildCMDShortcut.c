@@ -5,13 +5,15 @@ int main(int argc, char *argv[])
 
     if (argc == 2)
     {
-        char cmd[2048] = "cd \"";
+        char cmd[2048] = "cd /d \"";
         strcat(cmd, argv[1]);
         strcat(cmd, "\" && build.sh");
 
         char file_path[2048] = "";
         strcat(file_path, argv[1]);
         strcat(file_path, "/build.sh");
+
+        
 
         FILE *f;
         if ((f = fopen(file_path, "r")) != NULL)
