@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "*.cu": "cuda-cpp",
-        "*.cuh": "cuda-cpp",
-        "windows.h": "c"
-    }
-}
